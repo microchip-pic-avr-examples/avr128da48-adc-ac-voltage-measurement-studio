@@ -18,7 +18,7 @@ The AVR128DA48 features one 12-bit differential ADC. Differential ADC is used to
 ## Demo Description
 
 <p align="center">
-  <img width=1000 height=auto src="images/blockdiagram.png">
+  <img width=auto height=auto src="images/blockdiagram.png">
   <br><strong>Fig 1: Block diagram view of the system used for AC voltage measurement<br>
 </p>
 
@@ -28,7 +28,7 @@ In this demo,
 * Stepped down AC voltage is fed to the ADC +ve channel after offset voltage addition as shown in waveform in Fig 2.  And reference offset voltage is given as input to the -ve channel of the ADC. 
 
 <p align="center">
-  <img width=1000 height=auto src="images/waveform.png">
+  <img width=auto height=auto src="images/waveform.png">
   <br><strong>Fig 2: Waveform of AC signal input to the MCU<br>
 </p>
 
@@ -36,11 +36,11 @@ In this demo,
 * After capturing the required number of samples , RMS voltage is calculated using the captured sampled result and the formulae used for calculation is 
 
 <p align="center">
-  <img width=1000 height=auto src="images/formula.png">
+  <img width=auto height=auto src="images/formula.png">
 </p>
 
 <p align="center">
-  <img width=1000 height=auto src="images/formula1.png">
+  <img width=auto height=auto src="images/formula1.png">
 </p>
 
 * Calculated RMS voltage is displayed on terminal window through USART peripheral.
@@ -48,7 +48,7 @@ In this demo,
 ## Application code flow diagram
 
 <p align="center">
-  <img width=1000 height=auto src="images/flow-diagram.png">
+  <img width=auto height=auto src="images/firmwareflowchart.png">
   <br><strong>Fig 3: Application Code flow diagram<br>
 </p>
 
@@ -97,21 +97,21 @@ In this demo,
 * Some test data is shown in the below figures. For example : Set the AC input voltage to 50V and frequency to 50Hz and observe the measured RMS voltage displayed on terminal window as shown in Fig 8.
 
 <p align="center">
-  <img width=600 height=auto src="images/demooutput1.png">
+  <img width=auto height=auto src="images/demooutput1.png">
   <br><strong>Fig 8 : Observed output on terminal window for 50V AC input voltage and 50Hz frequency<br>
 </p> 
 
 * Set the AC input voltage to 250V and frequency to 50Hz and observe the measured RMS voltage displayed on the terminal window as shown in Fig 9.
 
 <p align="center">
-  <img width=600 height=auto src="images/demooutput2.png">
+  <img width=auto height=auto src="images/demooutput2.png">
   <br><strong>Fig 9 : Observed output on terminal window for 250V AC input voltage and 50Hz frequency<br>
 </p> 
 
 * Set the AC input voltage to 50V and frequency to 60Hz and observe the measured RMS voltage displayed on the terminal window as shown in Fig 10.
 
 <p align="center">
-  <img width=600 height=auto src="images/demooutput3.png">
+  <img width=auto height=auto src="images/demooutput3.png">
   <br><strong>Fig 10 : Observed output on terminal window for 50V AC input voltage and 60Hz frequency<br>
 </p>
 
@@ -225,14 +225,14 @@ To generate the interrupt, it is required to enable the Global Interrupt Enable 
 * Click on the icon next to "Show system drivers" option, as shown in the Fig 20.
 
 <p align="center">
-  <img width=auto height=auto src="images/globalinterrupt.jpg">
+  <img width=auto height=auto src="images/globalinterrupt.png">
   <br><strong>Fig 20 : ADC Configuration window<br>
 </p>
 
 * Click the CPUINT and then select the checkbox, CPU_SREG: Global Interrupt Enable, as shown in the Fig 21.
 
 <p align="center">
-  <img width=auto height=auto src="images/globalinterrupt1.jpg">
+  <img width=auto height=auto src="images/globalinterrupt1.png">
   <br><strong>Fig 21 : ADC Configuration window<br>
 </p>
 
