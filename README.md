@@ -87,7 +87,7 @@ In this demo,
 
 ## Demo Operation
 
-* Setup the hardware as shown in Hardware connections diagram in Fig 4 of the hardware setup section.
+* Setup the hardware as shown in Hardware connections diagram in Fig 7 of the hardware setup section in Fig 5.
 * After the curiosity nano board is powered up, load the application firmware to AVR128DA48 microcontroller.
 * Set the desired AC input voltage and frequency from the AC source and check the data displayed on terminal window.
 * Some test data is shown in the below figures. For example : Set the AC input voltage to 50V and frequency to 50Hz and observe the measured RMS voltage displayed on terminal window as shown in Fig 8.
@@ -126,8 +126,8 @@ The demo provides an example of differential ADC application using the 12-bit AD
 
 Configure ADC, GPIO, RTC, USART peripherals  through Atmel START code configurator and generate Atmel Studio project. 
 Follow the below steps to generate the project using Atmel START.
-1.	Open Atmel Studio 7.
-2.	Go to File → New and click on Atmel Start Project option.
+1.	Open **Atmel Studio 7**.
+2.	Go to **File → New** and click on **Atmel Start Project** option.
 3.	The CREATE NEW PROJECT window appears within Atmel Studio 7. In the "Filter on device..." text box, enter AVR128DA48, then select AVR128DA48 Curiosity Nano from the list and then click on CREATE NEW PROJECT, as shown in Fig 9. Wait until project creation is completed.
 
 <p align="center">
