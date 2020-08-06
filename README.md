@@ -135,7 +135,7 @@ Follow the below steps to generate the project using Atmel START.
 3.	The CREATE NEW PROJECT window appears within Atmel Studio 7. In the "Filter on device..." text box, enter AVR128DA48, then select AVR128DA48 Curiosity Nano from the list and then click on CREATE NEW PROJECT, as shown in Fig 9. Wait until project creation is completed.
 
 <p align="center">
-  <img width=600 height=auto src="images/projectcreation.png">
+  <img width=auto height=auto src="images/projectcreation.png">
   <br><strong>Fig 12 : Create New Project<br>
 </p>
 
@@ -147,7 +147,7 @@ open the **ADD SOFTWARE COMPONENTS** window by clicking![](images/add-software-c
        * Add the respective drivers to the project by clicking the Add component(s).
 
 <p align="center">
-  <img width=auto height=auto src="images/addcomponents.png">
+  <img width=500 height=auto src="images/addcomponents.png">
   <br><strong>Fig 13 : ADD SOFTWARE COMPONENTS<br>
 </p>
 
