@@ -118,7 +118,7 @@ In this demo,
 * Set the AC input voltage to 110V and frequency to 60Hz and observe the measured RMS voltage displayed on terminal window as shown in Fig 11.
 
 <p align="center">
-  <img width=600 height=auto src="images/demooutput4.png">
+  <img width=auto height=auto src="images/demooutput4.png">
   <br><strong>Fig 11 : Observed output on terminal window for 110V AC input voltage and 60Hz frequency<br>
 </p>
 
