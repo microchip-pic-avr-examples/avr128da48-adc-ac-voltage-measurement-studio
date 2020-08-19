@@ -92,7 +92,7 @@ In this demo,
 
 ## Demo Operation
 
-* Setup the hardware as shown in Hardware connections diagram in Fig 7 of the hardware setup section in Fig 5.
+* Setup the hardware as shown in hardware setup section in Fig 5.
 * After the curiosity nano board is powered up, load the application firmware to AVR128DA48 microcontroller.
 * Set the desired AC input voltage and frequency from the AC source and check the data displayed on terminal window.
 * Some test data is shown in the below figures. For example : Set the AC input voltage to 50V and frequency to 50Hz and observe the measured RMS voltage displayed on terminal window as shown in Fig 8.
@@ -144,7 +144,6 @@ Follow the below steps to generate the project using Atmel START.
   * Click![](images/dashboard.png) icon in the navigation tab, located on the left side of the window. Then, 
 open the **ADD SOFTWARE COMPONENTS** window by clicking![](images/add-software-components.png) icon.
        * Expand Drivers by clicking + icon.
-       * To add respective drivers to the project  select ADC, USART, VREF, RTC and click on![](images/plusicon.png) icon.
        * Add the respective drivers to the project by clicking the Add component(s).
 
 <p align="center">
