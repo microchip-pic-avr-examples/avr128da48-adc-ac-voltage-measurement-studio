@@ -57,7 +57,7 @@ In this demo,
 - Atmel Studio 7.0.2397 [link](https://www.microchip.com/mplab/avr-support/atmel-studio-7 "link")
 - AVR/GNU C Compiler [link](https://www.microchip.com/mplab/avr-support/avr-and-arm-toolchains-c-compilers "link")
 - Atmel START [link](https://www.microchip.com/mplab/avr-support/atmel-start "link")
-- AVR-Dx DFP 1.2.56
+- AVR-Dx DFP 1.3.67[link](http://packs.download.atmel.com/ "link")
 - Standalone Data Visualizer v2.20.674 [link](https://www.microchip.com/mplab/avr-support/data-visualizer "link")
 
 
