@@ -51,7 +51,7 @@
 			[
                "Peripherals", "INTERRUPT"
             ],
-						[
+			[
                "Peripherals", "GPIO"
             ]
         ],
