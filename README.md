@@ -1,7 +1,7 @@
 <!-- Please do not change this html logo with link -->
 <a href="https://www.microchip.com" rel="nofollow"><img src="images/microchip.png" alt="MCHP" width="200"/></a>
 
-# ADC AC voltage measurement Studio example
+# AC voltage measurement using Differential ADC
 
 ## Introduction
 The AVR128DA48 features one 12-bit differential ADC. Differential ADC is used to measure the voltage difference between the two input channels. This example demonstrates the AC voltage measurement using differential ADC.
@@ -25,7 +25,7 @@ The AVR128DA48 features one 12-bit differential ADC. Differential ADC is used to
 In this demo,
 
 * AC input to be measured is fed to the voltage stepdown circuit.
-* Stepped down AC voltage is fed to the ADC +ve channel after offset voltage addition as shown in waveform in Fig 2.  And reference offset voltage is given as input to the -ve channel of the ADC. 
+* Stepped down AC voltage is fed to the ADC +ve channel after offset voltage addition as shown in waveform in Fig 2 and reference offset voltage is given as input to the -ve channel of the ADC. 
 
 <p align="center">
   <img width=auto height=auto src="images/waveform.png">
@@ -33,7 +33,7 @@ In this demo,
 </p>
 
 * Periodic interrupt is used as a trigger for the ADC to start the conversion for every 500 microsecs delay. 
-* After capturing the required number of samples , RMS voltage is calculated using the captured sampled result and the formulae used for calculation is 
+* After capturing the required number of samples, RMS voltage is calculated using the captured sampled result and the formulae used for calculation is 
 
 <p align="center">
   <img width=auto height=auto src="images/formula.png">
@@ -128,7 +128,7 @@ The demo provides an example of differential ADC application using the 12-bit AD
 
 ## Appendix : Atmel START Project creation
 
-Configure ADC, GPIO, RTC, USART peripherals  through Atmel START code configurator and generate Atmel Studio project. 
+Configure ADC, GPIO, RTC and USART peripherals  through Atmel START code configurator and generate Atmel Studio project. 
 Follow the below steps to generate the project using Atmel START.
 1.	Open **Atmel Studio 7**.
 2.	Go to **File → New** and click on **Atmel Start Project** option.
@@ -178,9 +178,9 @@ VREF is configured to provide reference voltage for ADC peripheral. Configure th
 
 ## 7. RTC Configuration: 
 
-RTC is configured in PIT (Periodic Interrupt Timer) mode , which generates a periodic interrupt after every 500 microseconds . The periodic interrupt is used as a trigger for the ADC to start differential conversion . Configure the RTC peripheral by following the steps as shown in the Fig 16.
+RTC is configured in PIT (Periodic Interrupt Timer) mode, which generates a periodic interrupt after every 500 microseconds. The periodic interrupt is used as a trigger for the ADC to start differential conversion. Configure the RTC peripheral by following the steps as shown in the Fig 16.
 * Open the configuration window for RTC peripheral by clicking on RTC_0.
-* Check the PITEN: Enable option , which enables the PIT mode.
+* Check the PITEN: Enable option, which enables the PIT mode.
 * Select the clock Internal 32.768KHz oscillator option from the drop-down menu against the RTC Clock Source Selection field, which uses 32.768KHz oscillator as a clock source for the PIT mode.
 * Select the period RTC Clock Cycles 16 option from the drop-down menu against the PERIOD : Period field which generates 500 microsec delay.
 
@@ -199,7 +199,7 @@ ADC is configured in differential mode and it is used to measure the ac voltage 
   <br><strong>Fig 17 : ADC Configuration window<br>
 </p>
 
-* Check the GPIO PD6 and PD7 , where the input signal is fed.
+* Check the GPIO PD6 and PD7, where the input signal is fed.
 
 <p align="center">
   <img width=auto height=auto src="images/adc2.png">
@@ -211,7 +211,7 @@ ADC is configured in differential mode and it is used to measure the ac voltage 
 * Select the ADC input pin 7 option from the drop-down menu against MUXNEG: Analog Channel Selection Bits.
 * Select the ADC input pin 6 option from the drop-down menu against MUXPOS: Analog Channel Selection Bits.
 * Check the RESRDY: Result Ready Interrupt Enable option, which enables the ADC result ready interrupt.
-* Check the ENABLE: ADC Enable option , which enables the ADC.
+* Check the ENABLE: ADC Enable option, which enables the ADC.
 * Select the clock CLK_PER divided by 2 option from the drop-down, which generates 2MHz frequency as a clock to the ADC.
 
 <p align="center">
