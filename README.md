@@ -54,11 +54,12 @@ In this demo,
 
 ## Software used:
 
-- [MPLAB X IDE v5.40](https://www.microchip.com/mplab/mplab-x-ide "MPLAB X IDE v5.40")
-- [XC8 Compiler v2.20](https://www.microchip.com/mplab/compilers "XC8 Compiler v2.20")
-- [MPLAB Code Configurator (MCC) v3.95.0](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB Code Configurator (MCC) v3.95.0")
-- [AVR8bit Lib v2.3.0](https://www.microchip.com/mplab/mplab-code-configurator "AVR8bit Lib v2.3.0")
-- [AVR-Dx DFP 1.1.40](https://packs.download.atmel.com/ "AVR-Dx DFP 1.1.40")
+- Atmel Studio 7.0.2397 [link](https://www.microchip.com/mplab/avr-support/atmel-studio-7 "link")
+- AVR/GNU C Compiler [link](https://www.microchip.com/mplab/avr-support/avr-and-arm-toolchains-c-compilers "link")
+- Atmel START [link](https://www.microchip.com/mplab/avr-support/atmel-start "link")
+- AVR-Dx DFP 1.2.56
+- Standalone Data Visualizer v2.20.674 [link](https://www.microchip.com/mplab/avr-support/data-visualizer "link")
+
 
 **Note: For running the demo, the installed tool versions should be the same or later. This example is not tested with the previous versions.**
 
