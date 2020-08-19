@@ -5,7 +5,7 @@
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.mplabx.project.avr128da48-adc-ac-voltage-measurement-studio",
         "version": "1.0.1",
-        "displayName": "AC Voltage measurement MPLABX example",
+        "displayName": "AC Voltage measurement Studio example",
         "projectName": "avr128da48-adc-ac-voltage-measurement-studio",
         "shortDescription": "This example demonstrates the AC voltage measurement using differential ADC",
         "ide": {
@@ -51,13 +51,19 @@
 			[
                "Peripherals", "INTERRUPT"
             ],
+						[
+               "Peripherals", "GPIO"
+            ],
         ],
         "peripherals": [
-            "ADC","PIT","USART","INTERRUPT"
+            "ADC","PIT","USART","INTERRUPT","GPIO"
         ],
         "keywords": [
-            "MCC",
+            "START",
+			"AVR DA",
+			"AVR128DA48",
 			"AC voltage",
+			"Analog",
             "differential adc",
 		    "RMS",
 			"Samples",
