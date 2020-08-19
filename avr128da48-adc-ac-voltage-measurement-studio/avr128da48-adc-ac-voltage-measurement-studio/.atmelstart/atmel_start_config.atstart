@@ -1,0 +1,304 @@
+format_version: '2'
+name: AC voltage measurement using differential mode ADC
+versions:
+  api: '1.0'
+  backend: 1.7.298
+  commit: 1e07622763d149970fd8808a8f12ff3b1e84e0d7
+  content: unknown
+  content_pack_name: unknown
+  format: '2'
+  frontend: 1.7.298
+  packs_version_avr8: 1.0.1408
+  packs_version_qtouch: unknown
+  packs_version_sam: 1.0.1373
+  version_backend: 1.7.298
+  version_frontend: ''
+board:
+  identifier: AVR128DA48CuriosityNano
+  device: AVR128DA48
+details: null
+application:
+  definition: 'Atmel:AC_voltage_measurement_using_differential_mode_ADC:1.0.0::Application:AC_voltage_measurement_using_differential_mode_ADC:'
+  configuration: null
+middlewares: {}
+drivers:
+  CLKCTRL:
+    user_label: CLKCTRL
+    definition: Atmel:AVRMEGA_drivers:1.0.0::AVR128DA48::CLKCTRL::driver_config_definition::CLKCTRL::Drivers:CLKCTRL:Init
+    functionality: System
+    api: Drivers:CLKCTRL:Init
+    configuration:
+      clkctrl_mclkctrla_cksel: Internal high-frequency oscillator
+      clkctrl_mclkctrla_clkout: false
+      clkctrl_mclkctrlb_pdiv: '2'
+      clkctrl_mclkctrlb_pen: false
+      clkctrl_mclklock_locken: false
+      clkctrl_oschfctrla_autotune: false
+      clkctrl_oschfctrla_freqsel: '4'
+      clkctrl_oschfctrla_runstdby: false
+      clkctrl_oschftune_tune: 0
+      clkctrl_pllctrla_mulfac: '1'
+      clkctrl_pllctrla_runstdby: false
+      clkctrl_pllctrla_source: Internal high-frequency oscillator
+      clkctrl_xosc32kctrla_csut: 1k cycles
+      clkctrl_xosc32kctrla_lpmode: false
+      clkctrl_xosc32kctrla_runstdby: false
+      clkctrl_xosc32kctrla_sel: false
+      cpu_clock_source: Main Clock (CLK_MAIN)
+      enable_clk_per: true
+      enable_externalclock: false
+      enable_intHigh: true
+      enable_main: true
+      enable_osc32K: true
+      enable_pll: false
+      enable_tcd0: true
+      enable_xosc3212kctrla: false
+      extclk_clksel_clksel: External clock
+      externalclock: 8000000
+      nvm_clock_source: Main Clock (CLK_MAIN)
+      osc32k_clksel_clksel: Internal 32.768 kHz oscillator
+      osculp1k_clksel_clksel: Internal high-frequency oscillator
+      ram_clock_source: Main Clock (CLK_MAIN)
+      tcd0_ctrla_clksel: Internal high-frequency oscillator
+      tcd0_ctrla_syncpres: '1'
+      xosc32kctrla_arch_enable: false
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group:
+        nodes:
+        - name: CPU
+          input: CPU
+          external: false
+          external_frequency: 0
+        configuration: {}
+  USART_0:
+    user_label: USART_0
+    definition: Atmel:AVRMEGA_drivers:1.0.0::AVR128DA48::USART1::driver_config_definition::Async.Polled.Mode::Drivers:USART:Basic
+    functionality: USART
+    api: Drivers:USART:Basic
+    configuration:
+      baud_rate: 9600
+      ctrla_abeie: false
+      ctrla_dreie: false
+      ctrla_lbme: false
+      ctrla_rs485: RS485 Mode disabled
+      ctrla_rxcie: false
+      ctrla_rxsie: false
+      ctrla_txcie: false
+      ctrlb_mpcm: false
+      ctrlb_odme: false
+      ctrlb_rxen: false
+      ctrlb_rxmode: Normal mode
+      ctrlb_sfden: false
+      ctrlb_txen: true
+      ctrlc_chsize: 'Character size: 8 bit'
+      ctrlc_cmode: Asynchronous USART
+      ctrlc_pmode: No Parity
+      ctrlc_sbmode: 1 stop bit
+      ctrlc_ucpha: false
+      ctrlc_udord: false
+      dbgctrl_abmbp: false
+      dbgctrl_dbgrun: false
+      evctrl_irei: false
+      printf_support: true
+      rxplctrl_rxpl: 0
+      txplctrl_txpl: 0
+    optional_signals: []
+    variant:
+      specification: CMODE=0
+      required_signals:
+      - name: USART1/RXD
+        pad: PC1
+        label: RXD
+      - name: USART1/TXD
+        pad: PC0
+        label: TXD
+    clocks:
+      domain_group:
+        nodes:
+        - name: USART
+          input: Main Clock (CLK_MAIN)
+          external: false
+          external_frequency: 0
+        configuration:
+          usart_clock_source: Main Clock (CLK_MAIN)
+  SLPCTRL:
+    user_label: SLPCTRL
+    definition: Atmel:AVRMEGA_drivers:1.0.0::AVR128DA48::SLPCTRL::driver_config_definition::SLPCTRL::Drivers:SLPCTRL:Init
+    functionality: System
+    api: Drivers:SLPCTRL:Init
+    configuration:
+      slpctrl_ctrla_sen: false
+      slpctrl_ctrla_smode: Idle mode
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group: null
+  CPUINT:
+    user_label: CPUINT
+    definition: Atmel:AVRMEGA_drivers:1.0.0::AVR128DA48::CPUINT::driver_config_definition::CPUINT::Drivers:CPUINT:Init
+    functionality: System
+    api: Drivers:CPUINT:Init
+    configuration:
+      cpuint_ctrla_cvt: false
+      cpuint_ctrla_ivsel: false
+      cpuint_ctrla_lvl0rr: false
+      cpuint_global_interrupt: true
+      cpuint_lvl0pri_lvl0pri: 0
+      cpuint_lvl1vec_lvl1vec: 0
+      inc_isr_harness: false
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group: null
+  ADC_0:
+    user_label: ADC_0
+    definition: Atmel:AVRMEGA_drivers:1.0.0::AVR128DA48::ADC0::driver_config_definition::ADC.Basic::Drivers:ADC:Basic
+    functionality: ADC
+    api: Drivers:ADC:Basic
+    configuration:
+      adc_ctrla_convmode: Differential Mode Conversion
+      adc_ctrla_enable: true
+      adc_ctrla_freerun: false
+      adc_ctrla_leftadj: false
+      adc_ctrla_ressel: 12-bit mode
+      adc_ctrla_runstby: false
+      adc_ctrlb_sampnum: No accumulation
+      adc_ctrlc_presc: CLK_PER divided by 12
+      adc_ctrld_initdly: Delay 0 CLK_ADC cycles
+      adc_ctrld_sampdly: 0
+      adc_ctrle_wincm: No Window Comparison
+      adc_dbgctrl_dbgrun: false
+      adc_differential_mode: true
+      adc_evctrl_startei: false
+      adc_intctrl_resrdy: true
+      adc_intctrl_wcmp: false
+      adc_muxneg_muxneg: ADC input pin 7
+      adc_muxpos_muxpos: ADC input pin 6
+      adc_sampctrl_samplen: 0
+      adc_sampling_config: false
+      adc_winht: 0
+      adc_winlt: 0
+    optional_signals:
+    - identifier: ADC_0:AIN/6
+      pad: PD6
+      mode: Enabled
+      configuration: null
+      definition: Atmel:AVRMEGA_drivers:1.0.0::AVR128DA48::optional_signal_definition::ADC0.AIN.6
+      name: ADC0/AIN/6
+      label: AIN/6
+    - identifier: ADC_0:AIN/7
+      pad: PD7
+      mode: Enabled
+      configuration: null
+      definition: Atmel:AVRMEGA_drivers:1.0.0::AVR128DA48::optional_signal_definition::ADC0.AIN.7
+      name: ADC0/AIN/7
+      label: AIN/7
+    variant: null
+    clocks:
+      domain_group:
+        nodes:
+        - name: ADC
+          input: Main Clock (CLK_MAIN)
+          external: false
+          external_frequency: 0
+        configuration:
+          adc_clock_source: Main Clock (CLK_MAIN)
+  RTC_0:
+    user_label: RTC_0
+    definition: Atmel:AVRMEGA_drivers:1.0.0::AVR128DA48::RTC::driver_config_definition::RTC::Drivers:RTC:Init
+    functionality: RTC
+    api: Drivers:RTC:Init
+    configuration:
+      enable_rtc: true
+      inc_isr_harness: false
+      rtc_clksel_clksel: Internal 32.768 kHz oscillator
+      rtc_cmp: 0
+      rtc_cnt: 0
+      rtc_ctrla_prescaler: '1'
+      rtc_ctrla_rtcen: false
+      rtc_ctrla_runstdby: false
+      rtc_dbgctrl_dbgrun: false
+      rtc_intctrl_cmp: false
+      rtc_intctrl_ovf: false
+      rtc_per: 65535
+      rtc_pitctrla_period: RTC Clock Cycles 16
+      rtc_pitctrla_piten: true
+      rtc_pitdbgctrl_dbgrun: false
+      rtc_pitintctrl_pi: true
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group:
+        nodes:
+        - name: RTC
+          input: RTC Clock (CLK_RTC)
+          external: false
+          external_frequency: 0
+        configuration:
+          rtc_clock_source: RTC Clock (CLK_RTC)
+  VREF_0:
+    user_label: VREF_0
+    definition: Atmel:AVRMEGA_drivers:1.0.0::AVR128DA48::VREF::driver_config_definition::VREF::Drivers:VREF:Init
+    functionality: VREF
+    api: Drivers:VREF:Init
+    configuration:
+      vref_acref_alwayson: false
+      vref_acref_refsel: Internal 1.024V reference
+      vref_adcref_alwayson: true
+      vref_adcref_refsel: VDD as reference
+      vref_dacref_alwayson: false
+      vref_dacref_refsel: Internal 1.024V reference
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group: null
+  BOD:
+    user_label: BOD
+    definition: Atmel:AVRMEGA_drivers:1.0.0::AVR128DA48::BOD::driver_config_definition::BOD::Drivers:BOD:Init
+    functionality: System
+    api: Drivers:BOD:Init
+    configuration:
+      bod_ctrla_sleep: Disabled
+      bod_intctrl_vlmcfg: Interrupt when supply goes below VLM level
+      bod_intctrl_vlmie: false
+      bod_vlmctrla_vlmlvl: VLM threshold 5% above BOD level
+      inc_isr_harness: false
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group: null
+pads:
+  PC0:
+    name: PC0
+    definition: Atmel:AVRMEGA_drivers:1.0.0::AVR128DA48::pad::PC0
+    mode: Digital output
+    user_label: PC0
+    configuration: null
+  PC1:
+    name: PC1
+    definition: Atmel:AVRMEGA_drivers:1.0.0::AVR128DA48::pad::PC1
+    mode: Digital input
+    user_label: PC1
+    configuration: null
+  PD6:
+    name: PD6
+    definition: Atmel:AVRMEGA_drivers:1.0.0::AVR128DA48::pad::PD6
+    mode: Analog
+    user_label: PD6
+    configuration: null
+  PD7:
+    name: PD7
+    definition: Atmel:AVRMEGA_drivers:1.0.0::AVR128DA48::pad::PD7
+    mode: Analog
+    user_label: PD7
+    configuration: null
+toolchain_options:
+- definition:
+    identifier: Atmel:AVRMEGA_drivers:1.0.0::AVR128DA48::environment_definition::All:Atmel.Studio:7.0.0
+  configuration:
+    compiler_config:
+      avrgcc_compiler_miscellaneous_OtherFlags: -std=gnu99
+    linker_config:
+      avrgcc_linker_miscellaneous_LinkerFlags: ''
