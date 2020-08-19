@@ -13,7 +13,7 @@ The AVR128DA48 features one 12-bit differential ADC. Differential ADC is used to
 - [AVR128DA48 Product Page](https://www.microchip.com/wwwproducts/en/AVR128DA28 "AVR128DA48 Product Page")
 - [AVR128DA48 Code Examples on GitHub](https://github.com/microchip-pic-avr-examples?q=avr128da48 "AVR128DA48 Code Examples on GitHub")
 - [AVR128DA48 Project Examples in START](https://start.atmel.com/#examples/AVR128DA48CuriosityNano "AVR128DA48 Project Examples in START")
-- [ADC AC voltage measurement - MPLABX Example]( https://github.com/microchip-pic-avr-examples/avr128da48-3bit-ring-counter-start-example.git "ADC AC voltage measurement - MPLABX Example")
+- [ADC AC voltage measurement - MPLABX Example]( https://github.com/microchip-pic-avr-examples/avr128da48-adc-ac-voltage-measurement-mplab.git "ADC AC voltage measurement - MPLABX Example")
 
 ## Demo Description
 
