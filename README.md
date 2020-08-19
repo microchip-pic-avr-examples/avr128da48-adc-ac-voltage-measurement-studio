@@ -133,7 +133,7 @@ Configure ADC, GPIO, RTC and USART peripherals  through Atmel START code configu
 Follow the below steps to generate the project using Atmel START.
 1.	Open **Atmel Studio 7**.
 2.	Go to **File → New** and click on **Atmel Start Project** option.
-3.	The CREATE NEW PROJECT window appears within Atmel Studio 7. In the "Filter on device..." text box, enter AVR128DA48, then select AVR128DA48 Curiosity Nano from the list and then click on CREATE NEW PROJECT, as shown in Fig 9. Wait until project creation is completed.
+3.	The CREATE NEW PROJECT window appears within Atmel Studio 7. In the "Filter on device..." text box, enter AVR128DA48, then select AVR128DA48 Curiosity Nano from the list and then click on CREATE NEW PROJECT, as shown in Fig 12. Wait until project creation is completed.
 
 <p align="center">
   <img width=auto height=auto src="images/projectcreation.png">
@@ -166,7 +166,7 @@ USART 1 peripheral is used to transmit the measured AC voltage onto the terminal
 
 ## 6. VREF configuration: 
 
-VREF is configured to provide reference voltage for ADC peripheral. Configure the VREF peripheral by following the steps as shown in the Fig 12.
+VREF is configured to provide reference voltage for ADC peripheral. Configure the VREF peripheral by following the steps as shown in the Fig 15.
 * Open the configuration window for VREF by clicking on VREF_0.
 * Check the ALWAYSON: Enable reference always ON for ADC0 option to enable the reference voltage for ADC peripheral.  
 * Select the reference voltage VDD as reference from the drop-down menu against the REFSEL: Reference voltage for ADC0.   
@@ -206,7 +206,7 @@ ADC is configured in differential mode and it is used to measure the ac voltage 
   <br>Fig 18 : GPIO Configuration window<br>
 </p>
 
-* Configure ADC in differential mode by selecting the Differential Mode Conversion option from the drop-down menu against the CONVMODE: Differential Mode Conversion field as shown in Fig 16.
+* Configure ADC in differential mode by selecting the Differential Mode Conversion option from the drop-down menu against the CONVMODE: Differential Mode Conversion field as shown in Fig 19.
 * Check the Enable field to enable the differential mode conversion.
 * Select the ADC input pin 7 option from the drop-down menu against MUXNEG: Analog Channel Selection Bits.
 * Select the ADC input pin 6 option from the drop-down menu against MUXPOS: Analog Channel Selection Bits.
@@ -226,14 +226,14 @@ To generate the interrupt, it is required to enable the Global Interrupt Enable 
 
 <p align="center">
   <img width=auto height=auto src="images/globalinterrupt.png">
-  <br>Fig 20 : ADC Configuration window<br>
+  <br>Fig 20 : Show System driver configuration<br>
 </p>
 
 * Click the CPUINT and then select the checkbox, CPU_SREG: Global Interrupt Enable, as shown in the Fig 21.
 
 <p align="center">
   <img width=auto height=auto src="images/globalinterrupt1.png">
-  <br>Fig 21 : ADC Configuration window<br>
+  <br>Fig 21 : Global Interrupt Enable configurations<br>
 </p>
 
 
