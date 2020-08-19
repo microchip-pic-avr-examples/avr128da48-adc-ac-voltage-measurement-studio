@@ -172,7 +172,7 @@ VREF is configured to provide reference voltage for ADC peripheral. Configure th
 * Select the reference voltage VDD as reference from the drop-down menu against the REFSEL: Reference voltage for ADC0.   
 
 <p align="center">
-  <img width=750 height=auto src="images/vref.png">
+  <img width=auto height=auto src="images/vref.png">
   <br><strong>Fig 15 : VREF Configuration window<br>
 </p>
 
