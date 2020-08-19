@@ -57,7 +57,7 @@ In this demo,
 - Atmel Studio 7.0.2397 [link](https://www.microchip.com/mplab/avr-support/atmel-studio-7 "link")
 - AVR/GNU C Compiler [link](https://www.microchip.com/mplab/avr-support/avr-and-arm-toolchains-c-compilers "link")
 - Atmel START [link](https://www.microchip.com/mplab/avr-support/atmel-start "link")
-- AVR-Dx DFP 1.3.67[link](http://packs.download.atmel.com/ "link")
+- AVR-Dx DFP 1.3.67 [link](http://packs.download.atmel.com/ "link")
 - Standalone Data Visualizer v2.20.674 [link](https://www.microchip.com/mplab/avr-support/data-visualizer "link")
 
 
@@ -92,7 +92,7 @@ In this demo,
 
 ## Demo Operation
 
-* Setup the hardware as shown in hardware setup section in Fig 5.
+* Setup the hardware as shown in hardware setup section and in Fig 5.
 * After the curiosity nano board is powered up, load the application firmware to AVR128DA48 microcontroller.
 * Set the desired AC input voltage and frequency from the AC source and check the data displayed on terminal window.
 * Some test data is shown in the below figures. For example : Set the AC input voltage to 50V and frequency to 50Hz and observe the measured RMS voltage displayed on terminal window as shown in Fig 8.
