@@ -2,7 +2,7 @@
 
 pipeline {
     agent {
-			label 'idc-dk-i14545.microchip.com'
+			label 'windows'
     }
 
     parameters {
