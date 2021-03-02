@@ -4,17 +4,17 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.mplabx.project.avr128da48-adc-ac-voltage-measurement-studio",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "displayName": "AC Voltage measurement Studio example",
         "projectName": "avr128da48-adc-ac-voltage-measurement-studio",
-        "shortDescription": "This example demonstrates the AC voltage measurement using differential ADC",
+        "shortDescription": "This example demonstrates the AC voltage measurement using differential ADC of AVR DA microcontroller family",
         "ide": {
-            "name": "Studio",
+            "name": "STUDIO",
             "semverRange": ">=7.0.2397"
         },
         "compiler": [
 			{
-				"name": "Avr-Gcc",
+				"name": "AVR GCC",
 				"semverRange": "^5.4.0"
 			}
 		],
@@ -38,39 +38,24 @@
         },
         "author": "Microchip",
         "subcategories": [
-            "START",
+            "START","Home Appliance",
             [
                "Peripherals", "ADC"
             ],
             [
-               "Peripherals", "PIT"
+               "Peripherals", "RTC"
             ],
 			[
                "Peripherals", "USART"
-            ],
-			[
-               "Peripherals", "INTERRUPT"
-            ],
-			[
-               "Peripherals", "GPIO"
             ]
         ],
         "peripherals": [
-            "ADC","PIT","USART","INTERRUPT","GPIO"
+            "ADC","RTC","USART"
         ],
         "keywords": [
-            "START",
-			"AVR DA",
-			"AVR128DA48",
-			"AC voltage",
-			"Analog",
-            "differential adc",
-		    "RMS",
-			"Samples",
-			"Frequency",
-			"50Hz and 60Hz",
-			"Positive channel",
-			"Negative channel"
+			"Signal Conditioning & Measurement",
+			"Curiosity Nano",
+            "Voltage Detectors"
         ],
 		"additionalData": {
 			"longDescription": {
